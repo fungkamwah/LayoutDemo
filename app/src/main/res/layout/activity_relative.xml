@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--一个相对于父View水平居中的ImageView-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <!--imageView下方，父View右侧-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:text="text"
+        android:textSize="20sp" />
+
+
+    <!--相对父View 正居中的ImageView-->
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <!--centerImage上方的TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerImage"
+        android:layout_centerInParent="true"
+        android:text="上" />
+
+    <!--centerImage内左上的TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/centerImage"
+        android:layout_alignTop="@id/centerImage"
+        android:text="内左上"
+        android:textColor="#ffff00" />
+
+    <!--centerImage外右下的TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/centerImage"
+        android:layout_toRightOf="@id/centerImage"
+        android:text="外右下"
+        android:textColor="#ff0000" />
+
+
+    <!--centerImage下方的Button-->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="下" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="相对父View底部的按钮" />
+
+
+</RelativeLayout>
