@@ -1,15 +1,13 @@
-# LayoutDemo
-Android上手练习6.常用布局
 LinearLayout即线性布局，是Android界面开发中常用的布局方式之一。包括纵向的线性布局和横向的线性布局。
 
 
 ## 1 LinearLayout
 ## 1.1 
 新建项目，选择【Empty Activity】，让AndroidStudio帮我们创建一个空的Activity，并会自动在AndroidManifest.xml配置好默认的Activity。
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-103114.png)
+![image](http://youdao.mikezz.cn/QQ20190312-103114.png-wardo)
 
 生成的是一个可以直接运行Android项目。
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-104251.png)
+![image](http://youdao.mikezz.cn/QQ20190312-104251.png-wardo)
 
 ## 1.2 纵向LinearLayout
 生成的layout_main使用的是ConstraintLayout 
@@ -67,7 +65,7 @@ LinearLayout即线性布局，是Android界面开发中常用的布局方式之�
 通过设置属性orientation值为vertical，将LinearLayout设定为纵向的线性布局。
 运行一下看效果，为子View纵向排列的效果。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-112805.png)
+![image](http://youdao.mikezz.cn/QQ20190312-112805.png-wardo)
 
 ## 1.3 横向的LinearLayout
 设置属性orientation值为horizontal的LinearLayout为横向的线性布局。这里演示的是直接在上面的布局当中嵌套一个LinearLayout。
@@ -123,7 +121,7 @@ LinearLayout即线性布局，是Android界面开发中常用的布局方式之�
 
 运行效果
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-114219.png)
+![image](http://youdao.mikezz.cn/QQ20190312-114219.png-wardo)
 
 ## 1.4 weight比重
 线性布局中可通过设置weight来给子View分配空间。把刚刚的横向线性布局修改为
@@ -154,7 +152,7 @@ LinearLayout即线性布局，是Android界面开发中常用的布局方式之�
 ```
 LinearLayout设置属性weihtSum为6，三个Button分别设置layout_weight为1，2，3，即分别占据父布局空间的1/6，2/6，3/6，同时把把它们的 layout_width都设为0dp。运行看效果。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190312-115407.png)
+![image](http://youdao.mikezz.cn/QQ20190312-115407.png-wardo)
 
 
 *更多关于LinearLayout的内容可参考：[http://www.runoob.com/w3cnote/android-tutorial-linearlayout.html](http://www.runoob.com/w3cnote/android-tutorial-linearlayout.html)*
@@ -269,7 +267,7 @@ public class RelativeActivity extends AppCompatActivity {
 自行在MainActivity添加跳转到RelativeActivity，不要忘了在AndroidManifest.xml添加配置。
 运行看效果：
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-142626.png)
+![image](http://youdao.mikezz.cn/QQ20190321-142626.png-wardo)
 
 
 ## 3 FrameLayout
@@ -326,7 +324,7 @@ public class RelativeActivity extends AppCompatActivity {
 
 预览效果。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-145530.png)
+![image](http://youdao.mikezz.cn/QQ20190321-145530.png-wardo)
 
 
 ## 4 其他布局
